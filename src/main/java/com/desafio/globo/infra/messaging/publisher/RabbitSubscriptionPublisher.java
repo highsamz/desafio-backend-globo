@@ -1,7 +1,7 @@
 package com.desafio.globo.infra.messaging.publisher;
 
 import com.desafio.globo.application.MessagePublisher;
-import com.desafio.globo.domain.dto.RequestSubscriptionDto;
+import com.desafio.globo.api.request.RequestSubscriptionDto;
 import com.desafio.globo.infra.messaging.properties.SubscriptionQueueProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
