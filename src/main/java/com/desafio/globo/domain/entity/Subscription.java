@@ -1,20 +1,13 @@
 package com.desafio.globo.domain.entity;
 
-import com.desafio.globo.api.request.RequestSubscriptionDto;
-import com.desafio.globo.domain.enums.NotificationType;
 import com.desafio.globo.domain.enums.SubscriptionStatus;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
-
-@Getter
-@Setter
-@AllArgsConstructor
+@NoArgsConstructor
 @Document(collection = "subscription")
 public class Subscription {
 
