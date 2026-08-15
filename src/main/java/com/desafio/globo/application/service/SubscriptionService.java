@@ -36,7 +36,7 @@ public class SubscriptionService {
                 eventHistoryRepository.save(new EventHistory(notificationType, subscriptionId));
 
                 Subscription subscription = subscriptionRepository
-                        .findBySubscription(subscriptionId)
+                        .findBySubscriptionId(subscriptionId)
                         .orElseThrow(() -> new SubscriptionNotFoundException(subscriptionId));
 
                 subscription.activate();
@@ -47,7 +47,7 @@ public class SubscriptionService {
                 eventHistoryRepository.save(new EventHistory(notificationType, subscriptionId));
 
                 Subscription subscription = subscriptionRepository
-                        .findBySubscription(subscriptionId)
+                        .findBySubscriptionId(subscriptionId)
                         .orElseThrow(() -> new SubscriptionNotFoundException(subscriptionId));
 
                 subscription.cancel();
